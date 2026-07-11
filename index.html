@@ -1,41 +1,92 @@
 <!doctype html>
-<html>
+<html lang="zh-CN">
 <head>
-  <meta charset="utf-8">
-  <title>图书馆语音导览</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>图书馆语音导览</title>
+
+<style>
+
+body{
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",Arial,sans-serif;
+    max-width:700px;
+    margin:auto;
+    padding:20px;
+    line-height:1.8;
+    background:#ffffff;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:35px;
+}
+
+.audio-item{
+    margin-bottom:28px;
+}
+
+.audio-item p{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+audio{
+    display:block;
+    width:100%;
+    max-width:100%;
+}
+
+</style>
+
 </head>
+
 <body>
-  <h1>语音导览列表</h1>
 
-  <p>第一展厅</p>
-  <audio controls>
-    <source src="第一展厅.MP3" type="audio/mpeg">
-  </audio>
+<h1>语音导览列表</h1>
 
-  <p>春华秋实照片墙</p>
-  <audio controls>
-    <source src="春华秋实照片墙.MP3" type="audio/mpeg">
-  </audio>
+<div class="audio-item">
+<p>第一展厅</p>
+<audio controls preload="none">
+<source src="第一展厅.MP3" type="audio/mpeg">
+</audio>
+</div>
 
-  <p>历史发展第一时期（1704–1896）</p>
-  <audio controls>
-    <source src="历史发展第一时期1704-1896.MP3" type="audio/mpeg">
-  </audio>
+<div class="audio-item">
+<p>春华秋实照片墙</p>
+<audio controls preload="none">
+<source src="春华秋实照片墙.MP3" type="audio/mpeg">
+</audio>
+</div>
 
-  <p>历史发展第二时期（1896–1950）</p>
-  <audio controls>
-    <source src="历史发展第二时期1896-1950.MP3" type="audio/mpeg">
-  </audio>
+<div class="audio-item">
+<p>历史发展第一时期（1704–1896）</p>
+<audio controls preload="none">
+<source src="历史发展第一时期1704-1896.MP3" type="audio/mpeg">
+</audio>
+</div>
 
-  <p>历史发展第三时期（1950–2000）</p>
-  <audio controls>
-    <source src="历史发展第三时期1950-2000.MP3" type="audio/mpeg">
-  </audio>
+<div class="audio-item">
+<p>历史发展第二时期（1896–1950）</p>
+<audio controls preload="none">
+<source src="历史发展第二时期1896-1950.MP3" type="audio/mpeg">
+</audio>
+</div>
 
-  <p>历史发展第四时期2000至今</p>
-  <audio controls>
-    <source src="历史发展第四时期2000至今.MP3" type="audio/mpeg">
-  </audio>
+<div class="audio-item">
+<p>历史发展第三时期（1950–2000）</p>
+<audio controls preload="none">
+<source src="历史发展第三时期1950-2000.MP3" type="audio/mpeg">
+</audio>
+</div>
+
+<div class="audio-item">
+<p>历史发展第四时期（2000至今）</p>
+<audio controls preload="none">
+<source src="历史发展第四时期2000至今.MP3" type="audio/mpeg">
+</audio>
+</div>
 
 </body>
 </html>
